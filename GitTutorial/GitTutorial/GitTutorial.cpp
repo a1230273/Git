@@ -10,6 +10,10 @@ if (target == -1) {
 Random r;
 target = r.Next() % 100 + 1;
 }
+
+if (number == target) { std::cout << "Correct !!";  target = -1;  return true; }
+else std::cout << "Wrong" << std::endl;  return false;
+
 if (number == target)return true;
 return false;
 
